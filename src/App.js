@@ -16,13 +16,13 @@ function App() {
       <NoteContextProvider>
         <ThemeContextProvider>
           <Navbar title="NoteList" />
-          <Alert/>
+          <Alert />
+          <Routes>
+            <Route path="/" element={<Notes />} />
+            <Route path="/about" element={<About />} />
+            <Route path="*" element={<PageNotFound />} />
+          </Routes>
         </ThemeContextProvider>
-        <Routes>
-          <Route path="/" element={<Notes />} />
-          <Route path="/about" element={<About />} />
-          <Route path="*" element={<PageNotFound />} />
-        </Routes>
         <Footer />
       </NoteContextProvider>
     </>

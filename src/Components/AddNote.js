@@ -26,7 +26,7 @@ export default function AddNote() {
   return (
     <>
       <div>
-        <div className="container-fluid py-3 px-3" id="addNote-input">
+        <div className="container-fluid py-3 px-3 my-4" id="addNote-input">
           <h5 className="py-1 my-2">
             <strong>Add new Note</strong>
           </h5>

@@ -6,6 +6,7 @@ import { ThemeContext } from "../Context/Theme/ThemeContextProvider";
 export default function Navbar(props) {
   const context = useContext(ThemeContext);
   const { toggleTheme } = context;
+  console.log(context)
 
   return (
     <>

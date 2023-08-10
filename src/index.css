@@ -21,6 +21,7 @@
   --note-icon-hover: #6002ee;
   --note-toggle-band: #6002ee;
   --note-update-field: #f1f1f1;
+  --note-card-border: #ffffff;
 }
 [note-theme="dark"] {
   /** CSS DARK THEME PRIMARY COLORS */
@@ -46,6 +47,7 @@
   --note-icon-hover: #d6d6d6;
   --note-update-field: #f1f1f1;
   --note-toggle-band: #121212;
+  --note-card-border: #3e3e3e;
 }
 
 * {
@@ -109,7 +111,8 @@ button:focus {
 [note-theme="light"] {
   .container.noteListContainer,
   #addNote-input,
-  .about-noteList {
+  .about-noteList,
+  .NoteListRepoCard {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 }
@@ -143,14 +146,36 @@ footer {
   max-width: 70%;
   margin: 2% auto;
 }
+.about-container {
+  margin-top:1%;
+  padding-bottom: 1%;
+}
 @media screen and (max-width: 360px) {
   #main-container {
+    padding-bottom: 25%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .about-container {
+    margin-top:5%;
     padding-bottom: 25%;
   }
 }
 @media screen and (min-width: 360px) and (max-width: 768px) {
   #main-container {
     padding-bottom: 15%;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .about-container {
+    margin-top:5%;
+    padding-bottom: 15%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1140px) {
+  .about-container {
+    margin-top:5%;
+    padding-bottom: 5%;
   }
 }
 
@@ -230,23 +255,58 @@ i:hover {
 }
 .about-noteList {
   background-color: var(--noteList-container-bg);
+  color: var(--note-body-font-color);
   border-radius: 15px;
 }
+
+.NoteListRepoCard {
+  max-width: 70%;
+  border: 1px solid var(--note-card-border);
+  border-radius: 15px;
+}
+img.NoteListRepoCard:hover,
+img.NoteListRepoCard:focus {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+  .NoteListRepoCard {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-noteList {
+    max-width: 60%;
+  }
+}
+
 .toggle-theme {
   background-color: var(--note-toggle-band);
-  color:var(--note-base-white);
+  color: var(--note-base-white);
 }
 #toggleSwitch:focus {
-box-shadow: none;
+  box-shadow: none;
 }
 .form-switch .form-check-input:checked {
   background-color: var(--primary-button-bg);
   border: none;
 }
-.alert{
+.alert {
   display: none;
   position: fixed;
-  margin:2% 28%;
+  margin: 2% 28%;
   width: 40%;
-  text-align:center;
+  text-align: center;
+}
+@media screen and (max-width: 475px) {
+  .alert {
+    margin: 2% 5%;
+    width: 90%;
+  }
+}
+@media screen and (min-width: 475px) and (max-width: 768px) {
+  .alert {
+    margin: 1% 15%;
+    width: 70%;
+  }
 }
