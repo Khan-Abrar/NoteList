@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/NoteList/static/css/main.5c973700.css",
-    "main.js": "/NoteList/static/js/main.e6cfb92f.js",
+    "main.css": "/NoteList/static/css/main.ad30a3e1.css",
+    "main.js": "/NoteList/static/js/main.8c904b4f.js",
     "static/js/787.5cf4e54a.chunk.js": "/NoteList/static/js/787.5cf4e54a.chunk.js",
+    "static/media/NoteListDarkCard.svg": "/NoteList/static/media/NoteListDarkCard.7274cda9dac62df7a99965fe364a9377.svg",
+    "static/media/NoteListLightCard.svg": "/NoteList/static/media/NoteListLightCard.4c721d575f08303dd96be06a8bf8b9c0.svg",
     "index.html": "/NoteList/index.html",
-    "main.5c973700.css.map": "/NoteList/static/css/main.5c973700.css.map",
-    "main.e6cfb92f.js.map": "/NoteList/static/js/main.e6cfb92f.js.map",
+    "main.ad30a3e1.css.map": "/NoteList/static/css/main.ad30a3e1.css.map",
+    "main.8c904b4f.js.map": "/NoteList/static/js/main.8c904b4f.js.map",
     "787.5cf4e54a.chunk.js.map": "/NoteList/static/js/787.5cf4e54a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c973700.css",
-    "static/js/main.e6cfb92f.js"
+    "static/css/main.ad30a3e1.css",
+    "static/js/main.8c904b4f.js"
   ]
 }
