@@ -16,6 +16,7 @@ export default function AddNote() {
     e.preventDefault();
     setNote({ ...note, uniqueId: generateId("id") });
     addNote(note);
+    setNote({title: "", description: ""})
   };
 
   const handleChange = (e) => {
@@ -32,10 +33,10 @@ export default function AddNote() {
           </h5>
           <form onSubmit={addNoteSubmit}>
             <div className="form-group my-2">
-              <input onChange={handleChange} type="text" className="addNote-field form-control p-1" name="title" id="addNote-name" placeholder="Note Title" required minLength="3" />
+              <input onChange={handleChange} value={note.title} type="text" className="addNote-field form-control p-1" name="title" id="addNote-name" placeholder="Note Title" required minLength="3" />
             </div>
             <div className="form-group my-2 pb-2">
-              <textarea onChange={handleChange} className="addNote-field form-control p-1" id="addNote-desc" name="description" rows="2" placeholder="Note Description" required minLength="5"></textarea>
+              <textarea onChange={handleChange} value={note.description} className="addNote-field form-control p-1" id="addNote-desc" name="description" rows="2" placeholder="Note Description" required minLength="5"></textarea>
             </div>
             <button type="submit" id="submit" className="addNoteBtn btn mb-2">
               Add Note
